@@ -14,16 +14,26 @@
     <link rel="stylesheet" href="css/form.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body id="register">
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> DIKTATORSTYRELSEN </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li>
+            <a class="menuItem" href="instruction.html"
+              >Afledningsvejledning
+            </a>
+          </li>
+          <li><a class="menuItem" href="register.html">Bestil rumskib</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -34,18 +44,22 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>BESTIL RUMSKIB</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Diktatorformular</h2>
+          <p>Indsæt navn "Hr. Diktator af østen"</p>
         </article>
         <form id="webform"></form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsummering</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Bestilling kun muligt for diktatoren selv</p>
+          <p class="placeholder">
+            Rumskib daglig afgang med afrejse fra hemmeligt oplyste mødested kl.
+            23.56
+          </p>
         </article>
       </section>
     </main>

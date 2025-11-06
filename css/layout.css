@@ -81,4 +81,18 @@ footer ul {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .knapper {
+    display: flex;
+    float: left;
+    gap: 20px;
+    width: 50%;
+    padding: 20px;
+  }
+
+  #energi,
+  #smil,
+  #demokratiskesayings {
+    padding: 10px;
+  }
 }

@@ -40,3 +40,12 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+/* forstør et element - eks. øjet (for at den ikke hele tiden ser sådan ud laver vi en klasse, der hedder "myScale"
+.myScale
+den her er ændret til ovenstående #frederiksberg{
+transform: scale(1.3);
+transform-box: fill-box;
+transform-origin: 50% 50%;
+evt. farve - fill: pink; !important; ellers overskrive pink af .st3 reglen. alternativt add style.fill = "pink";
+}*/

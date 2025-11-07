@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
+    <title>Afledningsvejledning</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,32 +44,208 @@
     </header>
 
     <main>
-      <!-- opdater kode fra i går og indsæt her + branch, først herefter behandl data -->
-      <h1>BESTIL RUMSKIB</h1>
-      <section id="form-section">
+      <h1>Diktatorformular</h1>
+      <section>
         <article id="form-info">
-          <h2>Diktatorformular</h2>
-          <p>Indsæt navn "Hr. Diktator af østen"</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-
-      <section id="form-summary">
-        <h2>Opsummering</h2>
-        <!-- indsæt fra slid 40 ish + tilføj i js -->
-        <!-- <p>First:
-  <span class="first_output"></span>
-</p> -->
-
-        <!-- placeholder p class kan omdøbes til firstOutput etc. -->
-        <article>
-          <p class="placeholder">Bestilling kun muligt for diktatoren selv</p>
-          <p class="placeholder">
-            Rumskib daglig afgang med afrejse fra hemmeligt oplyste mødested kl.
-            23.56
+          <p>
+            Udfyld nedenstående formular for at sikre din overlevelse.
+            Bestilling kun muligt for diktatoren selv.
+            <br />
+            <strong>
+              OBS! Rumskib afgang fra et hemmeligt mødested, der eftersendes ved
+              bestilling.</strong
+            >
           </p>
         </article>
+
+        <br />
+        <!-- indsæt placeholder tekst for felterne
+ <p class="placeholder">Indsæt navn "Hr. Diktator af østen"</p>  -->
+
+        <!-- start kontaktoplysninger -->
+        <h3>Kontaktoplysninger</h3>
+        <form aria-label="EK signup form">
+          <div class="form-group">
+            <label for="first_name">Fornavn</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              aria-describedby="fname-error"
+              required
+            />
+            <p class="error-message" id="fname-error">
+              Indtast venligst dit fornavn
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Efternavn</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              aria-describedby="lname-error"
+              required
+            />
+            <p class="error-message" id="lname-error">
+              Indtast venligst dit efternavn
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-describedby="email-error"
+              required
+            />
+            <p class="error-message" id="email-error">
+              Indtast venligst din email
+            </p>
+          </div>
+          <!-- slut kontaktoplysninger -->
+
+          <!-- start afrejse -->
+          <h3>Afrejse</h3>
+
+          <div class="form-group">
+            <label for="date">Vælg dato for afrejse</label>
+            <input
+              type="datetime-local"
+              id="date"
+              name="date"
+              aria-describedby="date-error"
+              required
+            />
+            <p class="error-message" id="date-error">Vælg venligst dato</p>
+          </div>
+          <!-- slut afrejse -->
+
+          <!--Indsætter required på hvert enkelte radio label, så den kan lave aria fejl meddelelse hvis ingen er valg? tjek evt. peters optagelse af radiobutton af 7.nov.-->
+          <!-- start vælg din rumraket -->
+          <h3>Vælg din rumraket</h3>
+          <div class="form-group">
+            <label for="falcon">
+              <input
+                type="radio"
+                id="falcon"
+                name="rumraket"
+                value="Falcon del Caudillo"
+              />
+              Falcon del Caudillo - En luksusmodel, men med autoritær
+              kontrolpanel. </label
+            ><br />
+            <label for="Vostok">
+              <input
+                type="radio"
+                id="Vostok"
+                name="rumraket"
+                value="Vostok Il-Sung"
+              />
+              Vostok Il-Sung - En raket, der altid “lander perfekt” ifølge
+              statsmedierne.
+            </label>
+            <br />
+
+            <label for="ariane">
+              <input
+                type="radio"
+                id="ariane"
+                name="rumraket"
+                value="Ariane Mussolini"
+              />
+              Ariane Mussolini - Italiensk flair og dramatisk stil; flyver højt
+              på propaganda og benzin.
+            </label>
+            <br />
+            <label for="dictaX">
+              <input
+                type="radio"
+                id="dictaX"
+                name="rumraket"
+                value="DictaX Heavy"
+              />
+              DictaX Heavy - Tung, pompøs og helt sikkert “den største i
+              verden”, ifølge dens egen pressemeddelelse.
+            </label>
+          </div>
+          <!-- slut vælg din rumraket   -->
+
+          <!-- start verificering -->
+          <h3>Verificering</h3>
+          <p>
+            Af sikkerhedsmæssige årsager bedes du uploade dokumentation i form
+            af gyldigt diktatorbevis.
+          </p>
+          <div class="form-group">
+            <label for="file"> Upload diktatorbevis </label>
+            <input
+              type="file"
+              id="file"
+              name="file"
+              value="Uploadet"
+              aria-describedby="file-error"
+              required
+            />
+
+            <p class="error-message" id="file-error">
+              Upload venligst diktatorbevis
+            </p>
+          </div>
+          <!-- slut verificering -->
+
+          <!-- start betingelser -->
+          <div class="form-group">
+            <label for="accept_terms">
+              <input
+                type="checkbox"
+                id="accept_terms"
+                name="accept_terms"
+                value="Ja"
+                aria-describedby="terms-error"
+                required
+              />
+              Accepter betingelser
+            </label>
+            <p class="error-message" id="terms-error">
+              Accepter venligst betingelser
+            </p>
+          </div>
+          <!-- slut betingelser -->
+
+          <button>Bestil rumraket</button>
+        </form>
       </section>
+
+      <!-- til fremtidig egenhjælp under udarbejdelse navngiv <h2>Opsamling (output)</h2>, herefter ændre til specifik h2, så længe section class "output" giver mening for dig -->
+      <section class="output">
+        <h2>Bestillingsoversigt</h2>
+
+        <!-- til fremtidig egenhjælp kan nedenstående span id navngives <span id=="terms_output_fra_id", så jeg lærer hvad jeg tager fat i. -->
+        <div>
+          <p class="firstOutput">
+            Fornavn: <span id="first_name_output"></span>
+          </p>
+          <p class="lastOutput">
+            Efternavn: <span id="last_name_output"></span>
+          </p>
+          <p class="emailOutput">Email: <span id="email_output"></span></p>
+          <p class="dateOutput">Afrejsedato: <span id="date_output"></span></p>
+          <p class="rumraketOutput">
+            Rumraket: <span id="rumraket_output"></span>
+          </p>
+          <p class="fileOutput">
+            Dokumentation: <span id="file_output"></span>
+          </p>
+          <p class="termsOutput">
+            Betingelser accepteret: <span id="terms_output"></span>
+          </p>
+        </div>
+      </section>
+      <script src="index.js"></script>
     </main>
     <footer>
       <nav class="some">
@@ -97,7 +273,9 @@
         </ul>
       </nav>
     </footer>
+
     <script src="js/burger.js"></script>
+    <script src="js/form.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

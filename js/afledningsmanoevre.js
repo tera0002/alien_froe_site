@@ -23,7 +23,7 @@ document
 function demokratiskesayingsF() {
   console.log("demokratiskesayingsF er loaded...");
 }
-
+// lav hotspot-ting for de tre knapper: se de øvrige css tings for frederiksberg etc.
 // Rentegning_krop
 // helefroe
 // oeje

@@ -74,25 +74,15 @@ footer ul {
   .qr {
     order: 1;
   }
+  /* har indsat nedenstående fra generel ift at rød block løber bag H1 på undersider fylder 100% længde på mobil */
+  main > h1 {
+    width: calc(80% - 6rem);
+  }
 
   h1 {
     grid-column: 1 / -1;
   }
   footer {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .knapper {
-    display: flex;
-    float: left;
-    gap: 20px;
-    width: 50%;
-    padding: 20px;
-  }
-
-  #energi,
-  #smil,
-  #demokratiskesayings {
-    padding: 10px;
   }
 }

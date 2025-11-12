@@ -41,11 +41,89 @@
   background-color: var(--color-infobox-2-bg);
 }
 
-/* forstør et element - eks. øjet (for at den ikke hele tiden ser sådan ud laver vi en klasse, der hedder "myScale"
-.myScale
-den her er ændret til ovenstående #frederiksberg{
-transform: scale(1.3);
-transform-box: fill-box;
-transform-origin: 50% 50%;
-evt. farve - fill: pink; !important; ellers overskrive pink af .st3 reglen. alternativt add style.fill = "pink";
-}*/
+/* start infographic knapper */
+.knapper {
+  display: flex;
+  float: left;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+}
+/* opdater knapper når jeg har klassificeret svg */
+#energi,
+#sendetsmil,
+#demokratiskesayings {
+  padding: 10px;
+}
+/* slut infographic knapper */
+
+/* forstør et element - eks. øjet (for at den ikke hele tiden ser forstørret ud, laver vi en class, der hedder "myScale" vi kan tilføje til den til det respektive ID
+den her er ændret til #frederiksberg{
+  evt. farve - fill: pink; !important; ellers overskrive pink af .st3 reglen. alternativt add style.fill = "pink";
+  }*/
+.my_scale {
+  transform: scale(1.3);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.selected #taender path {
+  fill: blue;
+}
+
+/* Classes */
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
+.wiggle {
+  animation: wiggle 0.1s linear infinite;
+}
+.hide {
+  visibility: hidden;
+}
+/* 
+  .fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+} */
+
+/* Keyframe animations */
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */

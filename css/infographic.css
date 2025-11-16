@@ -7,9 +7,16 @@
   padding: 20px 0;
 }
 .info-graphic {
-  border-radius: 0;
+  border-radius: 2px;
   margin: 60px auto 80px auto;
 }
+/* svg_infografik størrelse og placering */
+#Layer_2 {
+  width: 60%;
+  height: auto;
+  justify-self: center;
+}
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -52,8 +59,10 @@
 /* opdater knapper når jeg har klassificeret svg */
 #energi,
 #sendetsmil,
-#demokratiskesayings {
+#demokratiskesayings,
+#resetknap {
   padding: 10px;
+  /* gør det der med at koble disse på øvrige CTA-knapper fra layoutcss og custom.css */
 }
 /* slut infographic knapper */
 

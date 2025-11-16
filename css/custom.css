@@ -23,8 +23,8 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1.6rem;
-  --color-headline-bg: #b2c2ed;
-  --color-headline-text-page: #810c10;
+  --color-headline-bg: #de252a;
+  --color-headline-text-page: #dfe4ed;
 
   /* Tekst   */
   --color-text: black;
@@ -40,10 +40,25 @@
   --color-card-bg: #8a9ed4;
   --color-cta-card-bg: #de252a;
   /* news-cards */
+  --color-news-bg: #dfe4ed;
+  --color-news-bg-inverted: #dfe4ed;
+  --color-cta-newscard-bg: #de252a;
+  --color-cta-newscard-bg-inverted: #de252a;
+
+  /* Cards 
+  sort: 000
+  lys rød: de252a
+  mørk rød: 810c10
+  hvid: dfe4ed
+  lys blå: B2C2ED
+  mørk blå: 8A9ED4
+  --color-card-bg: #8a9ed4;
+  --color-cta-card-bg: #de252a;
+   news-cards 
   --color-news-bg: #de252a;
   --color-news-bg-inverted: #810c10;
   --color-cta-newscard-bg: #dfe4ed;
-  --color-cta-newscard-bg-inverted: #dfe4ed;
+  --color-cta-newscard-bg-inverted: #dfe4ed; */
 
   /* Fonts */
   --font-family-sans: saira condensed;
@@ -68,4 +83,11 @@
   --color-infobox-2-bg: #969995;
 
   /* indsæt custom mundhule grå farve */
+
+  /* demokratiske citering  */
+  blockquote {
+    font-style: italic;
+    padding: 6px;
+    padding-top: 12px;
+  }
 }

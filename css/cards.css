@@ -12,16 +12,67 @@
   grid-template-rows: repeat(3, min-content);
   gap: 10px;
 }
+/* samlet faq */
+.faq {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  gap: 10px;
+}
+/* detaljecontainer for spørgsmålene */
+details {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-radius: var(--border-radius);
+}
+/* animeret overgang fold ind/ud */
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
+/* indholdstekst i fold ud tilstand */
+.content {
+  padding: 1rem;
+  background-color: #b2c2ed;
+
+  p {
+    margin: 0;
+  }
+}
+
+summary {
+  cursor: pointer;
+  padding: 1rem;
+}
+
 .daily_text h2 {
   background-color: var(--color-headline-bg);
   color: var(--color-text-inverted);
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
 }
+.faq h2 {
+  background-color: var(--color-headline-bg);
+  color: var(--color-text-inverted);
+  padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.faq p {
+  padding-right: 2rem;
+  margin: 0 0 1rem 0;
+}
 .daily_text p {
   padding-right: 2rem;
   margin: 0 0 1rem 0;
 }
+
+/* tilføj hover */
 .daily_text .cta_btn {
   justify-self: left;
   width: 80%;
@@ -67,10 +118,11 @@
 .news_card:last-child {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-
+/* tilføj hover */
 .news_card .cta_btn {
   justify-self: center;
 }
+/* tilføj hover */
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
@@ -80,6 +132,7 @@
   width: max-content;
   border-radius: var(--border-radius);
 }
+/* tilføj hover */
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
@@ -87,7 +140,39 @@
   background-color: var(--color-cta-newscard-bg-inverted);
   color: var(--color-text);
 }
+/* mangler LÆS MERE CTA KNAP HOVEr */
+.cta_btn:hover {
+  background-color: #8a9ed4;
+  /* background-color: var(--color-cta-card-bg); */
+  border: 2px solid #de252a;
+  /* border-radius: var(--border-radius-links); */
+}
+
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+#news_popover_et,
+#news_popover_to,
+#news_popover_tre {
+  padding: 1.2rem;
+  max-height: 90vh;
+  max-width: 70ch;
+  width: 90vw;
+  place-self: center;
+
+  button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+  }
+
+  &:popover-open {
+    display: grid;
+  }
+
+  &::backdrop {
+    background: #0008;
+  }
 }

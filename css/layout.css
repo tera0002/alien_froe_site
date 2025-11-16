@@ -55,9 +55,15 @@ footer ul {
   grid-template-rows: repeat(2, minmax(200px, min-content));
   gap: 1rem;
 }
+
 #breaking {
   grid-template-rows: repeat(auto-fit, minmax(50px, min-content));
   gap: 0;
+}
+
+/* lav baggrund lys blå, breaking news række rød + CTA røde og hvd tekst */
+.news_card {
+  border: 2px solid #de252a;
 }
 
 @media (width > 600px) {

@@ -2,6 +2,12 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+  color-scheme: light;
+}
+/* har indsat color-scheme light og dark, til modes + herefter indsæt variabler i css root */
+
+html.dark {
+  color-scheme: dark;
 }
 
 header {
@@ -107,10 +113,9 @@ nav a {
   width: max-content;
   margin-left: 1rem;
 }
-/* hjælp til korrektion med PEter */
-.logo img {
-  width: 20%;
-  height: 15%;
+
+.icon {
+  width: 100px;
 }
 
 /* Global menu */

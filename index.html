@@ -25,14 +25,19 @@
       <nav>
         <div id="logotype-wrapper" class="logo">
           <a href="index.html"> DIKTATORSTYRELSEN </a>
-          <img src="img/logo.svg" alt="logo" />
+          <!-- <img src="img/DS_logo_endelig.svg" alt="logo" /> -->
         </div>
         <ul class="menu">
           <li>
             <a class="menuItem" href="instruction.html">Afledningsmanøvre</a>
           </li>
           <li><a class="menuItem" href="register.html">Bestil rumraket</a></li>
+          <!-- hvad skal jeg linke til hvis ikke det er en knap med link? -->
+          <li>
+            <a class="menuItem" id="toggle">Darkmode</a>
+          </li>
         </ul>
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -42,8 +47,9 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <!-- indsæt icon???? -->
-        <img src="" alt="ICON" />
+        <!-- har midlertidigt indsat logo i stedet for icon???? -->
+        <img src="img/DS_logo_endelig.svg" class="icon" alt="icon" />
+        <!-- <img src="" alt="ICON" /> -->
         <div>
           <h1>DIKTATORHJÆLP</h1>
           <p class="sub">Good-Bei-Diktatut</p>
@@ -54,7 +60,7 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/rumraket.webp" alt="teaser_img" />
           <div class="daily_text">
             <h2>Undvigemanøvre</h2>
             <p>
@@ -67,7 +73,7 @@
         </article>
 
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/rumraket.webp" alt="teaser_img" />
           <div class="daily_text">
             <h2>Afledningsmanøvre</h2>
             <p>
@@ -80,7 +86,7 @@
         </article>
 
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/rumraket.webp" alt="teaser_img" />
           <div class="faq">
             <h2>FAQ - Ofte stillet spørgsmål</h2>
 
@@ -95,7 +101,7 @@
             </details>
 
             <details name="my_details">
-              <summary>Mit rumsib dukkede aldrig op?</summary>
+              <summary>Mit rumskib dukkede aldrig op?</summary>
               <div class="content">
                 <p>
                   Bare rolig, vi vil med al hast fremsende et nyt rumskib, så
@@ -158,7 +164,7 @@
             Diktatorstyrelsen frigiver beredskabsplan “Diktatorhjælp 101” for at
             sikre stabilitet og flugtforberedelse.
           </p>
-          <img src="img/03_der_var_engang.webp" alt="news_img" />
+          <img src="img/rumraket_V2.webp" alt="news_img" />
 
           <button class="cta_btn" popovertarget="news_popover_et">
             Læs mere
@@ -353,6 +359,8 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/darkmode.js"></script>
+
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

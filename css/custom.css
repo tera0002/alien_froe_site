@@ -1,9 +1,9 @@
 :root {
   /* Colours */
-  --color-bg: #dfe4ed; /* page background /*
+  --color-bg: light-dark(#dfe4ed, #222); /* page background /*
 
   /* Header */
-  --color-head-bg: #de252a;
+  --color-head-bg: light-dark(#de252a, #810c10);
 
   /* Logotype */
   --color-logotype-bg: black;
@@ -14,7 +14,7 @@
   --color-menu-bg: black;
   /* Links */
   --color-link-bg: #dfe4ed;
-  --color-link-hover: #b2c2ed; /* used */
+  --color-link-hover: light-dark(#b2c2ed, #8a9ed4); /* used */
   --color-link-active: #8a9ed4; /* used */
   --border-radius-links: 2px;
 
@@ -23,12 +23,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1.6rem;
-  --color-headline-bg: #de252a;
+  --color-headline-bg: light-dark(#de252a, #810c10);
   --color-headline-text-page: #dfe4ed;
 
   /* Tekst   */
   --color-text: black;
-  --color-text-inverted: black;
+  --color-text-inverted: light-dark(black, #dfe4ed);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,28 +37,14 @@
   --border-radius: 2px;
 
   /* Cards */
-  --color-card-bg: #8a9ed4;
-  --color-cta-card-bg: #de252a;
+  /* en god grå til dark-mode just in case: #858080 */
+  --color-card-bg: light-dark(#8a9ed4, #414d70);
+  --color-cta-card-bg: light-dark(#de252a, #810c10);
   /* news-cards */
-  --color-news-bg: #dfe4ed;
-  --color-news-bg-inverted: #dfe4ed;
-  --color-cta-newscard-bg: #de252a;
-  --color-cta-newscard-bg-inverted: #de252a;
-
-  /* Cards 
-  sort: 000
-  lys rød: de252a
-  mørk rød: 810c10
-  hvid: dfe4ed
-  lys blå: B2C2ED
-  mørk blå: 8A9ED4
-  --color-card-bg: #8a9ed4;
-  --color-cta-card-bg: #de252a;
-   news-cards 
-  --color-news-bg: #de252a;
-  --color-news-bg-inverted: #810c10;
-  --color-cta-newscard-bg: #dfe4ed;
-  --color-cta-newscard-bg-inverted: #dfe4ed; */
+  --color-news-bg: light-dark(#dfe4ed, #414d70);
+  --color-news-bg-inverted: light-dark(#dfe4ed, #414d70);
+  --color-cta-newscard-bg: light-dark(#de252a, #810c10);
+  --color-cta-newscard-bg-inverted: light-dark(#de252a, #810c10);
 
   /* Fonts */
   --font-family-sans: saira condensed;
@@ -78,9 +64,9 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #b2c2ed;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#b2c2ed, #414d70);
+  --color-infobox-1-bg: light-dark(#8a9ed4, #b2c2ed);
+  --color-infobox-2-bg: light-dark(#8a9ed4, #8a9ed4);
 
   /* indsæt custom mundhule grå farve */
 

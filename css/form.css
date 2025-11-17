@@ -7,6 +7,7 @@
   background-color: var(--info-background-color);
   padding: 0;
 }
+
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;
@@ -40,14 +41,14 @@ input {
   box-shadow: 0px 1px 2px #0001;
 }
 
-button {
+/* button {
   border: 1px solid #000;
   background-color: #000;
   color: #fff;
   border-radius: 6px;
   padding: 0.25rlh 0.5rlh;
   cursor: pointer;
-}
+} */
 
 .error-message {
   color: darkred;
@@ -55,13 +56,17 @@ button {
 
 /* Form layout */
 form {
+  background-color: #dfe4ed;
+  padding: 30px;
+  border: 2px solid #8a9ed454;
+  border-radius: 6px;
   /* display: grid;
   gap: 1rlh;
   padding: 1rlh; */
-
   .form-group {
     display: grid;
-    gap: 0.1rlh;
+    gap: 10px;
+    padding-bottom: 30px;
   }
 
   label:has(input) {
@@ -75,16 +80,19 @@ form {
 /* Pseudo-classes */
 :focus-visible {
   /* virker til både knapper og input-felter, select, textarea, links mm. */
-  outline: 2px solid slateblue;
+  outline: 2px solid #8a9ed4;
   outline-offset: 1px;
+  background-color: #b2c2ed;
 }
 /* Hover-styles */
 button:hover {
-  background: #222;
+  background: #b2c2ed;
 }
+
 /* Active-styles (imens man klikker) */
 button:active {
   scale: 0.98;
+  background: #8a9ed4;
 }
 
 /* Valideringsregler */
@@ -95,7 +103,7 @@ button:active {
 .form-group:has(:required) {
   label::after {
     content: " *";
-    color: red;
+    color: #de252a;
   }
 }
 /* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
@@ -126,10 +134,13 @@ section {
   align-content: start;
 }
 
+/* form aria label omdøbes fra EK signup group til bestillingsformular - omdøb alle felter i html og evt. hcss */
+
 .output div {
-  background: #f5f5f5;
+  background: #b2c2ed;
   padding: 1rlh;
   border-radius: 6px;
+  /* border #8a9ed4 */
   display: grid;
   gap: 0.5rlh;
 }

@@ -107,6 +107,11 @@ nav a {
   width: max-content;
   margin-left: 1rem;
 }
+/* hjælp til korrektion med PEter */
+.logo img {
+  width: 20%;
+  height: 15%;
+}
 
 /* Global menu */
 header nav li a {

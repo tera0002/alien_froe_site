@@ -51,11 +51,18 @@
 /* start infographic knapper */
 .knapper {
   display: flex;
-  float: left;
+  /* float: left; */
   gap: 20px;
-  width: 50%;
   padding: 20px;
 }
+
+.knapper button:last-child {
+  display: flex;
+  /* kan jo ikke bruges fordi justify-content: flex-end definere for forælder .knapper og ikke barnet "Reset" */
+  margin-left: auto;
+  background-color: var(--color-knapper-last-child);
+}
+
 /* opdater knapper når jeg har klassificeret svg */
 #energi,
 #sendetsmil,

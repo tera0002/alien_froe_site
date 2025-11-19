@@ -31,10 +31,19 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+/* nødløsning af farve form-info text og output h2 tekst i sidste time */
+#form-info {
+  color: light-dark(black, #dfe4ed);
+}
+
+.output h2 {
+  color: light-dark(black, #dfe4ed);
+}
 
 /* CSS Starter er tilføjet */
 /* Generelle styles */
 input {
+  background-color: #dfe4ed;
   border: 1px solid #ccc;
   padding: 0.25rlh;
   border-radius: 6px;
@@ -56,9 +65,11 @@ input {
 
 /* Form layout */
 form {
-  background-color: #dfe4ed;
+  /* background-color: #dfe4ed; */
+  background-color: var(--info-background-color);
   padding: 30px;
-  border: 2px solid #8a9ed454;
+  /* border: 2px solid #8a9ed454; */
+  border: 2px solid #de252a;
   border-radius: 6px;
   /* display: grid;
   gap: 1rlh;
@@ -82,7 +93,8 @@ form {
   /* virker til både knapper og input-felter, select, textarea, links mm. */
   outline: 2px solid #8a9ed4;
   outline-offset: 1px;
-  background-color: #b2c2ed;
+
+  background-color: #dfe4ed;
 }
 /* Hover-styles */
 button:hover {
@@ -134,10 +146,11 @@ section {
   align-content: start;
 }
 
-/* form aria label omdøbes fra EK signup group til bestillingsformular - omdøb alle felter i html og evt. hcss */
+/* form aria label omdøbes fra EK signup group til bestillingsformular - omdøb alle felter i html og evt. css */
 
 .output div {
-  background: #b2c2ed;
+  background: var(--color-link-hover);
+
   padding: 1rlh;
   border-radius: 6px;
   /* border #8a9ed4 */

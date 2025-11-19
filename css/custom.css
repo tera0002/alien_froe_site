@@ -64,10 +64,12 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: light-dark(#b2c2ed, #414d70);
-  --color-infobox-1-bg: light-dark(#8a9ed4, #b2c2ed);
+  --color-info-bg: light-dark(#b2c2ed, #8a9ed4);
+  --color-infobox-1-bg: #8a9ed4;
   --color-infobox-2-bg: light-dark(#8a9ed4, #8a9ed4);
-
+  --color-knapper-last-child: light-dark(#8a9ed4, #414d70);
+  /* Form */
+  --info-background-color: light-dark(#dfe4ed, #b2c2ed);
   /* indsæt custom mundhule grå farve */
 
   /* demokratiske citering  */

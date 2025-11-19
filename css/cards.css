@@ -5,7 +5,7 @@
   gap: 10px;
   padding: 40px 0 40px 20px;
   border-radius: var(--border-radius);
-  height: minmax(200px, min-content);
+  height: min-content;
 }
 .daily_text {
   display: grid;
@@ -73,12 +73,11 @@ summary {
   margin: 0 0 1rem 0;
 }
 
-/* tilføj hover */
 .daily_text .cta_btn {
   justify-self: left;
   width: 80%;
   background-color: light-dark(#de252a, #810c10);
-  border: 2px solid light-dark(#de252a, #222);
+  border: 2px solid light-dark(#222, #dfe4ed);
 }
 
 .daily_img {
@@ -99,7 +98,8 @@ article.daily_card img {
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
   padding: 1rem 0;
-  height: minmax(300px, min-content);
+  height: min-content;
+  /* height: minmax(300px, min-content); */
 }
 .news_card:nth-child(2n) {
   background-color: var(--color-news-bg-inverted);

@@ -52,8 +52,8 @@
         <img src="img/DS_logo_endelig.svg" class="icon" alt="icon" />
         <!-- <img src="" alt="ICON" /> -->
         <div>
-          <h1>DIKTATORHJÆLP</h1>
-          <p class="sub">Good-Bei-Diktatut</p>
+          <h1 class="diktatorhjaelp">DIKTATORHJÆLP</h1>
+          <p class="sub diktatorhjaelpsub">Good-Bei-Diktatut</p>
         </div>
       </div>
     </section>
@@ -61,7 +61,7 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="img/rumraket.webp" alt="teaser_img" />
+          <img src="img/rumraket.webp" alt="rumraket" />
           <div class="daily_text">
             <h2>Undvigemanøvre</h2>
             <p>
@@ -74,7 +74,11 @@
         </article>
 
         <article class="daily_card">
-          <img src="img/rumraket.webp" alt="teaser_img" />
+          <img
+            src="img/gladdiktator.webp"
+            alt="gladdiktator"
+            id="gladdiktator"
+          />
           <div class="daily_text">
             <h2>Afledningsmanøvre</h2>
             <p>
@@ -87,7 +91,7 @@
         </article>
 
         <article class="daily_card">
-          <img src="img/rumraket.webp" alt="teaser_img" />
+          <img src="img/diktatorfroe.webp" alt="diktatorfroe" />
           <div class="faq">
             <h2>FAQ - Ofte stillet spørgsmål</h2>
 
@@ -107,7 +111,11 @@
                 <p>
                   Bare rolig, vi vil med al hast fremsende et nyt rumskib, så
                   din afrejse kan finde sted snarest! Ring venligst 112 for
-                  nødhjælp.
+                  nødhjælp. Alternativt skyldes det sandsynligvis frøernes nye
+                  Punktlighedsprotokol, der tvinger alle opsendelser til at
+                  følge menneskelige tidsbegreber. Dit skib er altså ikke
+                  forsinket - det øver ro. Forvent ankomst, når du mindst
+                  fortjener det.
                 </p>
               </div>
             </details>
@@ -118,10 +126,10 @@
               </summary>
               <div class="content">
                 <p>
-                  <!-- indsæt noget der ikke er lorem -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet doloremque quaerat ipsa voluptates temporibus a
-                  quibusdam facilis?
+                  Uden bevis vil frøerne automatisk klassificere dig som
+                  “almindeligt menneske”, hvilket indebærer venlig behandling og
+                  adgang til demokratiske rettigheder. Myndigheder advarer:
+                  Effekten kan være permanent.
                 </p>
               </div>
             </details>
@@ -132,10 +140,10 @@
               </summary>
               <div class="content">
                 <p>
-                  <!-- indsæt noget der ikke er lorem -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet doloremque quaerat ipsa voluptates temporibus a
-                  quibusdam facilis?
+                  Typiske symptomer inkluderer let lyst til samarbejde,
+                  sporadiske taksigelser og uforklarlig ro i kroppen. Kontakt
+                  Diktatorstyrelsens Karantænecenter, hvor du straks vil blive
+                  isoleret fra positive værdier.
                 </p>
               </div>
             </details>
@@ -144,11 +152,9 @@
               <summary>Er Alien-frøer en reel trudsel?</summary>
               <div class="content">
                 <p>
-                  <!-- indsæt noget der ikke er lorem -->
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam nobis recusandae saepe, fugiat officia impedit
-                  assumenda ipsa repudiandae odio ducimus laboriosam, laudantium
-                  distinctio illo voluptatem tenetur beatae quo!
+                  Kun hvis du insisterer på at bevare magten. For almindelige
+                  borgere vurderes risikoen som minimal og mest filosofisk. For
+                  diktatorer: <strong>total og uafvendelig.</strong>
                 </p>
               </div>
             </details>
@@ -168,7 +174,7 @@
             Diktatorstyrelsen frigiver beredskabsplan “Diktatorhjælp 101” for at
             sikre stabilitet og flugtforberedelse.
           </p>
-          <img src="img/rumraket_V2.webp" alt="news_img" />
+          <img src="img/surdiktator.webp" alt="surdiktator" id="surdiktator" />
 
           <button class="cta_btn" popovertarget="news_popover_et">
             Læs mere
@@ -232,7 +238,8 @@
             Myndigheder rapporterer om hurtig nedbrydning af kontrolmekanismer.
             Eksperter kalder det ”den bløde invasion”.
           </p>
-          <img src="img/03_der_var_engang.webp" alt="news_img" />
+
+          <img src="img/diktator_på_flugt.webp" alt="diktator_på_flugt" />
           <button class="cta_btn" popovertarget="news_popover_to">
             Læs mere
           </button>
@@ -290,7 +297,7 @@
             “Good-Bei-Diktatut” - en flugtvej for magtbevarelse og
             værdighedstab.
           </p>
-          <img src="img/03_der_var_engang.webp" alt="news_img" />
+          <img src="img/tronefald.webp" alt="tronefald" />
           <button class="cta_btn" popovertarget="news_popover_tre">
             Læs mere
           </button>
@@ -341,30 +348,7 @@
     </main>
 
     <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+      <p>Copyright: Te Rahbæk</p>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/darkmode.js"></script>

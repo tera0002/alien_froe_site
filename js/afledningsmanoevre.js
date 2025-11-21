@@ -27,8 +27,8 @@ function sendetsmilF() {
   resetF();
   document.querySelector("#smil").classList.add("my_scale");
   document.querySelector("#smil").classList.add("selected");
-  document.querySelector("#taender").style.stroke = "red";
-  document.querySelector("#smil .mundhule").style.fill = "yellow";
+  document.querySelector("#taender").style.stroke = "yellow";
+  document.querySelector("#smil .mundhule").style.fill = "black";
   document.querySelector(".info-smil").innerHTML =
     '<strong>Smil</strong> <br/> Oftest fysisk udfordrende for enhver diktator, men alien-frøen kan afledes ved at udsende et smil og godt humørt - se evt. tutorial.<br /><br /> Du kan tillige lægge det stramme udseende på hylden og forklæd dig lidt loose. <br /> <br />   <a href="https://www.youtube.com/watch?v=VaZnXo2p1YI"           class="cta_btn"target="_blank">Lær at smile tutorial</a>';
 }

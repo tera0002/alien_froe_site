@@ -24,8 +24,8 @@ footer {
   display: grid;
   gap: 10px;
 }
-header nav,
-footer nav {
+/* footer nav fjernet fordi html ul li mm fjernet */
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,10 +41,10 @@ header ul {
   height: 100%;
   width: clamp(175px, 50%, 300px);
 }
-footer ul {
+/* footer ul {
   flex-direction: column;
   padding-left: 1rem;
-}
+} */
 
 /* LAYOUT FOR SECTIONS */
 #daily,
@@ -89,6 +89,6 @@ footer ul {
     grid-column: 1 / -1;
   }
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }

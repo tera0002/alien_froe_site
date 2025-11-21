@@ -15,10 +15,21 @@
   width: 60%;
   height: auto;
   justify-self: center;
+  padding-top: 30px;
+}
+#rumraket {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  /* object-fit: cover; */
+  /* align-items: center; */
+  padding-bottom: 30px;
 }
 
 .info-text h2 {
   line-height: 3rem;
+
   text-align: center;
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
@@ -54,6 +65,7 @@
   /* float: left; */
   gap: 20px;
   padding: 20px;
+  margin-top: 125px;
 }
 
 .knapper button:last-child {
@@ -84,7 +96,7 @@ den her er ændret til #frederiksberg{
 }
 
 .selected #taender path {
-  fill: blue;
+  fill: red;
 }
 
 /* Classes */
